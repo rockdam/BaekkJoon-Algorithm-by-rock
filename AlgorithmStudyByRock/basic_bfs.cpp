@@ -1,7 +1,11 @@
 #include<iostream>
 #include<queue>
 #include<vector>
-
+//https://blog.naver.com/ndb796?Redirect=Log&logNo=221230944971&from=postView
+// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+//push_backï¿½ï¿½ ï¿½Ç¹ï¿½
+//ï¿½×³ï¿½ ï¿½Ï¹ï¿½ ï¿½è¿­ ï¿½ï¿½Å¿ï¿½ ï¿½ï¿½ï¿½ï¿½Æ®ï¿½Îµï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ vectorï¿½ï¿½ ï¿½ï¿½ï¿½Å´Ù°ï¿½ ï¿½ï¿½ï¿½Ã¸ï¿½ ï¿½Å¿ï¿½! 
+//ï¿½âº»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½×·ï¿½ï¿½ï¿½ ï¿½Ì·Ð¿ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ È¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½. push_backï¿½ï¿½ ï¿½×³ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ß°ï¿½ï¿½ï¿½ ï¿½Ç¹Ì¿ï¿½ï¿½ï¿½.
 using namespace std;
 
 int nodeNum = 7;
@@ -17,7 +21,7 @@ void bfs(int start)
     {
         int x = que.front();
         que.pop();
-        printf("%d", x);
+        printf("%d ", x);
         for (int i = 0; i < node[x].size(); i++)
         {
 
@@ -37,35 +41,32 @@ int main()
 {
     node[1].push_back(2);
     node[2].push_back(1);
-    //1°ú 2¸¦ ¿¬°áÇÕ´Ï´Ù.
+//1ê³¼ 2ë¥¼ ì—°ê²° 
     node[1].push_back(3);
     node[3].push_back(1);
-    //1°ú 3¸¦ ¿¬°áÇÕ´Ï´Ù.
+
     node[2].push_back(3);
     node[3].push_back(2);
-    //2°ú 3¸¦ ¿¬°áÇÕ´Ï´Ù.
+   
     node[2].push_back(4);
     node[4].push_back(2);
-    //2¿Í 4¸¦ ¿¬°áÇÕ´Ï´Ù.
+
     node[2].push_back(5);
     node[5].push_back(2);
-    //2¿Í 5¸¦ ¿¬°áÇÕ´Ï´Ù.
 
     node[4].push_back(5);
     node[5].push_back(4);
-    //4¿Í 5¸¦ ¿¬°áÇÕ´Ï´Ù.
+
     node[6].push_back(7);
     node[7].push_back(6);
-    //6°ú 7À» ¿¬°áÇÕ´Ï´Ù.
 
     node[3].push_back(6);
     node[6].push_back(3);
-    //3°ú 6À» ¿¬°áÇÕ´Ï´Ù.
 
 
     node[3].push_back(7);
     node[7].push_back(3);
-   //3°ú 7À» ¿¬°áÇÕ´Ï´Ù.
+
     bfs(1);
      
   return 0;
