@@ -2,10 +2,9 @@
 #include<queue>
 #include<vector>
 //https://blog.naver.com/ndb796?Redirect=Log&logNo=221230944971&from=postView
-// ���� ����
-//push_back�� �ǹ�
-//�׳� �Ϲ� �迭 ��ſ� ����Ʈ�ε� ����� ������ vector�� ���Ŵٰ� ���ø� �ſ�! 
-//�⺻������ �׷��� �̷п����� ���� ����Ʈ�� ����� �� �� ���� ȿ������ �������ϴ�. push_back�� �׳� ���� �߰��� �ǹ̿���.
+
+//push_back
+
 using namespace std;
 
 int nodeNum = 7;
